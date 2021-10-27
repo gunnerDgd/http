@@ -4,8 +4,9 @@
 #include <unordered_map>
 
 #include <http/types/exception.hpp>
-#include <http/message/message.hpp>
 #include <http/types/define.hpp>
+
+#include <http/message/message.hpp>
 
 #include <string_tools/serialize/serialize.hpp>
 #include <string_tools/extract/extract.hpp>

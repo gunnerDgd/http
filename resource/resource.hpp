@@ -19,9 +19,9 @@ namespace http {
 
 	private:
 		resource(handle_type, handle_type, char*);
+		resource()						 = delete;
+		 
 	public:
-		resource() = delete;
-
 		static resource from_file	  (handle_type);
 		static resource from_file_name(std::string);
 
@@ -41,7 +41,6 @@ http::resource::resource(handle_type __pa_iomap, handle_type __pa_file, char* __
 {
 	HTTP_EXCEPTION_THROW(__pa_iomap == NULL, http::exception::resource_exception("NULL IOMAP Input"));
 	HTTP_EXCEPTION_THROW(__pa_file  == INVALID_HANDLE_VALUE, http::exception::resource_exception("Invalid IOMAP File."));
-
 
 	DWORD iomap_size_high,
 		  iomap_size_low = GetFileSize(__m_res_iomap_file, &iomap_size_high);
