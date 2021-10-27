@@ -6,16 +6,21 @@
 #include <string>
 #include <Windows.h>
 
-#include <http/types/exception.hpp>
-#include <http/types/define.hpp>
+#include <http/endpoint/session/connection/connection.hpp>
+#include <http/endpoint/session/connection/secured_connection.hpp>
 
 namespace http {
 	class resource
 	{
-		typedef HANDLE handle_type;
-	public:
-		char*		get_resource() { return __m_res_iomap_pointer; }
-		std::size_t get_size    () { return __m_res_iomap_size   ; }
+	private:
+		typedef HANDLE										  handle_type  ;
+		typedef http::endpoint::session::connection::receiver receiver_type;
+		typedef http::endpoint::session::connection::sender   sender_type  ;
+
+		typedef http::endpoint::session::secured_connection::sender   sec_sender_type;
+		typedef http::endpoint::session::secured_connection::receiver sec_receiver_type;
+
+		typedef std::pair<char*, std::size_t>				  raw_type     ;
 
 	private:
 		resource(handle_type, handle_type, char*);
@@ -24,6 +29,19 @@ namespace http {
 	public:
 		static resource from_file	  (handle_type);
 		static resource from_file_name(std::string);
+
+	public:
+		friend sender_type& operator << (sender_type& __pa_snd, resource& __pa_res)
+		{
+			__pa_snd << raw_type(__pa_res.__m_res_iomap_pointer, __pa_res.__m_res_iomap_size);
+			return __pa_snd;
+		}
+
+		friend sec_sender_type& operator << (sec_sender_type& __pa_snd, resource& __pa_res)
+		{
+			__pa_snd << raw_type(__pa_res.__m_res_iomap_pointer, __pa_res.__m_res_iomap_size);
+			return __pa_snd;
+		}
 
 	private:
 		handle_type __m_res_iomap_handle;

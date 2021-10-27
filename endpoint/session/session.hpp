@@ -17,6 +17,7 @@ namespace endpoint {
 	public:
 		class cookie;
 		class connection;
+		class secured_connection;
 		
 	private:
 		SOCKET	    __m_session_socket;
