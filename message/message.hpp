@@ -20,14 +20,20 @@ namespace http    {
 		typedef std::pair<char*, std::size_t>			raw_type;
 
 	private:
-		message (char* __pa_raw, std::size_t __pa_size) 
-			: raw_message(__pa_raw), raw_size(__pa_size) { }
+		message(char* __pa_raw, std::size_t __pa_size);
 	public:
-		message () : raw_size(HTTP_MESSAGE_MTU) { HTTP_MESSAGE_ALLOCATE(raw_message); }
-		~message()								{ delete[] raw_message; }
+		message ();
+		message (message&);
+		message (message&&);
+
+		~message();
 
 	public:
-		friend sender_type& operator << (sender_type& __pa_snd, message& __pa_msg) 
+		message& operator= (message&);
+		message& operator= (message&&);
+
+	public:
+		friend sender_type& operator << (sender_type& __pa_snd, message& __pa_msg)
 		{
 			__pa_snd << raw_type(__pa_msg.raw_message, __pa_msg.raw_size);
 			return __pa_snd;
@@ -55,4 +61,60 @@ namespace http    {
 		char*		raw_message;
 		std::size_t raw_size;
 	};
+}
+
+http::message::message(char* __pa_raw, std::size_t __pa_size)
+	: raw_message(__pa_raw), raw_size(__pa_size)
+{
+	HTTP_DEBUG_PRINT("[MESSAGE] Message Block Constructed (Internally) :: "s + std::to_string((uint64_t)raw_message));
+}
+
+http::message::message() : raw_size(HTTP_MESSAGE_MTU)
+{
+	HTTP_MESSAGE_ALLOCATE(raw_message);
+	HTTP_DEBUG_PRINT	 ("[MESSAGE] Message Block Constructed :: "s + std::to_string((uint64_t)raw_message));
+}
+
+http::message::message(message& __pa_copy)
+	: raw_message(__pa_copy.raw_message),
+	  raw_size   (__pa_copy.raw_size)
+{
+	__pa_copy.raw_message = nullptr;
+	__pa_copy.raw_size    = 0;
+}
+
+http::message::message(message&& __pa_move)
+	: raw_message(__pa_move.raw_message),
+	  raw_size   (__pa_move.raw_size)
+{
+	__pa_move.raw_message = nullptr;
+	__pa_move.raw_size    = 0;
+}
+
+http::message::~message()
+{
+	HTTP_MESSAGE_DEALLOCATE(raw_message);
+	HTTP_DEBUG_PRINT("[MESSAGE] Message Block Destructed :: "s + std::to_string((uint64_t)raw_message));
+}
+
+http::message& http::message::operator= (message& __pa_copy)
+{
+	raw_message = __pa_copy.raw_message;
+	raw_size    = __pa_copy.raw_size;
+
+	__pa_copy.raw_message = nullptr;
+	__pa_copy.raw_size    = 0;
+
+	return *this;
+}
+
+http::message& http::message::operator= (message&& __pa_move)
+{
+	raw_message = __pa_move.raw_message;
+	raw_size    = __pa_move.raw_size;
+
+	__pa_move.raw_message = nullptr;
+	__pa_move.raw_size    = 0;
+
+	return *this;
 }
