@@ -1,0 +1,21 @@
+#pragma once
+#include <stdint.h>
+#include <http/resolv/details/http_resolv.h>
+
+__synapse_http_resolv_result_iterator*
+__synapse_http_resolv_query_iterator_initialize(__synapse_http_resolv_result*);
+
+void
+__synapse_http_resolv_query_iterator_cleanup(__synapse_http_resolv_result*);
+
+int
+__synapse_http_resolv_query_iterator_next(__synapse_http_resolv_result_iterator*);
+
+synapse_http_resolv_v4
+__synapse_http_resolv_query_iterator_retrieve_v4(__synapse_http_resolv_result_iterator*);
+
+synapse_http_resolv_v6
+__synapse_http_resolv_query_iterator_retrieve_v6(__synapse_http_resolv_result_iterator*);
+
+synapse_http_resolv_url
+__synapse_http_resolv_query_iterator_retrieve_cname(__synapse_http_resolv_result_iterator*);

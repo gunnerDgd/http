@@ -1,0 +1,24 @@
+#pragma once
+#include <stdint.h>
+
+#include <http/connection/connection_type.h>
+#include <http/connection/details/http_connection_type.h>
+#include <http/connection/details/acceptor/http_acceptor_type.h>
+
+__synapse_http_connection_acceptor_tcp_handle*
+__synapse_http_connection_acceptor_tcp_initialize_from_v4(synapse_http_connection_addr_v4);
+
+__synapse_http_connection_acceptor_tcp_handle*
+__synapse_http_connection_acceptor_tcp_initialize_from_v6(synapse_http_connection_addr_v6);
+
+void
+__synapse_http_connection_acceptor_tcp_bind_v4(__synapse_http_connection_acceptor_tcp_handle*);
+
+void
+__synapse_http_connection_acceptor_tcp_listen(__synapse_http_connection_acceptor_tcp_handle*, int);
+
+__synapse_http_connection_handle_tcp*
+__synapse_http_connection_acceptor_tcp_accept(__synapse_http_connection_acceptor_tcp_handle*);
+
+void
+__synapse_http_connection_acceptor_tcp_cleanup(__synapse_http_connection_acceptor_tcp_handle*);

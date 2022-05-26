@@ -1,0 +1,5 @@
+﻿  http_resolv_iterate.c
+  resolv.c
+  resolv_iterate.c
+  Generating Code...
+  synapse-http-resolv.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-http\libs\x64\debug\synapse-http-resolv.lib

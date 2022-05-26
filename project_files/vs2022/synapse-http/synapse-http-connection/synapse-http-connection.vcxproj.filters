@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\details">
+      <UniqueIdentifier>{a0842e47-e4ce-4858-af0a-0cebfa1b52f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\c">
+      <UniqueIdentifier>{45031107-6884-4dad-af98-b0500d278b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\c\details">
+      <UniqueIdentifier>{a1d1f2a1-05e8-48fd-a851-2f5eaa87925c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\c\details\acceptor">
+      <UniqueIdentifier>{e490d4c1-d815-47e5-9e2f-aaa6123533c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\details\acceptor">
+      <UniqueIdentifier>{b5781718-ccd7-4a01-8fa3-0be2c83787d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\acceptor">
+      <UniqueIdentifier>{1c2b03f7-be4c-4671-8d53-6acb55cfec37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\http\connection\connection_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\details\http_connection.h">
+      <Filter>Header Files\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\details\acceptor\http_acceptor_tcp.h">
+      <Filter>Header Files\details\acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\details\http_connection_type.h">
+      <Filter>Header Files\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\details\acceptor\http_acceptor_type.h">
+      <Filter>Header Files\details\acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\connection_tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\acceptor\acceptor_tcp.h">
+      <Filter>Header Files\acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\connection\acceptor\acceptor_type.h">
+      <Filter>Header Files\acceptor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\c\connection\details\http_connection.c">
+      <Filter>Source Files\c\details</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\connection\details\acceptor\http_acceptor_tcp.c">
+      <Filter>Source Files\c\details\acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\connection\connection_tcp.c">
+      <Filter>Source Files\c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\connection\acceptor_tcp.c">
+      <Filter>Source Files\c</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
