@@ -13,21 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\details">
+      <UniqueIdentifier>{933c17e0-a265-4a40-94c5-4bffa3122f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\details\request">
+      <UniqueIdentifier>{cb06db67-4dce-4c59-932d-4eda23be4153}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\..\include\http\transaction\details\request\http_request.h">
+      <Filter>Header Files\details\request</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\..\include\http\transaction\details\http_transaction_type.h">
+      <Filter>Header Files\details</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="synapse-http-transaction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

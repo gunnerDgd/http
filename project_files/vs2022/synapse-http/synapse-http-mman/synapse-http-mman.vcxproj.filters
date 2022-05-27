@@ -13,5 +13,72 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\details">
+      <UniqueIdentifier>{d3e55cae-9257-4159-94e0-c9f05afe4d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\buffering">
+      <UniqueIdentifier>{a87fec55-b03c-4ef3-a0b7-54e242531597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\details\buffering">
+      <UniqueIdentifier>{14696269-54bf-4d89-9af4-7d5696ef855d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interface">
+      <UniqueIdentifier>{0fca45c9-a245-4b30-bb2c-db875f547354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\details">
+      <UniqueIdentifier>{e36fc8ea-63fc-44a0-a35b-cf7f67774a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\details\entity">
+      <UniqueIdentifier>{614c5d3a-668a-4850-b6c3-6bb6771c6cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\entity">
+      <UniqueIdentifier>{1ac63fd9-9fcd-4244-950a-e7e2b9f608af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\details\entity">
+      <UniqueIdentifier>{08d06633-b9a5-4e90-9c56-048f1333be60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entity">
+      <UniqueIdentifier>{b1fdb8eb-83c5-46a7-b386-f4108a3f65d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\buffering">
+      <UniqueIdentifier>{4200f335-8b8b-49d0-8193-58faf9d57064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\details\buffering">
+      <UniqueIdentifier>{fce815c5-32ff-4054-af82-c547a87aeedf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\http\mman\interface\mman.h">
+      <Filter>Header Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\mman\details\entity\http_mman_heap_based.h">
+      <Filter>Header Files\details\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\mman\entity\heap_based.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\mman\buffering\default_buffering.h">
+      <Filter>Header Files\buffering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\mman\interface\mman_buffering.h">
+      <Filter>Header Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\http\mman\details\buffering\http_mman_default_buffering.h">
+      <Filter>Header Files\details\buffering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\c\details\mman\entity\http_mman_heap_based.c">
+      <Filter>Source Files\details\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\mman\entity\heap_based.c">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\mman\buffering\default_buffering.c">
+      <Filter>Source Files\buffering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\c\details\mman\buffering\http_mman_default_buffering.c">
+      <Filter>Source Files\details\buffering</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

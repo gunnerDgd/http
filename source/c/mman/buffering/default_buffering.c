@@ -1,0 +1,7 @@
+#include <http/mman/buffering/default_buffering.h>
+
+synapse_http_mman_buffering_entity
+synapse_http_mman_buffering_default_initialize(size_t pBlockSize, synapse_http_mman_interface pMman);
+
+synapse_http_mman_buffering_entity
+synapse_http_mman_buffering_default_cleanup();
