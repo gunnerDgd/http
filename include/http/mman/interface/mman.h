@@ -5,7 +5,7 @@ typedef struct synapse_http_mman_interface
 {
 	void*   entity;
 	void* (*allocate)  (void*, void*, size_t);
-	void* (*deallocate)(void*, void*, size_t);
+	void  (*deallocate)(void*, void*, size_t);
 	void* (*resize)    (void*, void*, size_t);
 } synapse_http_mman_interface;
 

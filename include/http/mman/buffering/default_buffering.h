@@ -5,5 +5,5 @@
 synapse_http_mman_buffering_entity
 synapse_http_mman_buffering_default_initialize(size_t, synapse_http_mman_interface);
 
-synapse_http_mman_buffering_entity
-synapse_http_mman_buffering_default_cleanup   ();
+void
+synapse_http_mman_buffering_default_cleanup   (synapse_http_mman_buffering_entity);

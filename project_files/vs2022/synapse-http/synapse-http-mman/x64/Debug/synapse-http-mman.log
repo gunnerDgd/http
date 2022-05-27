@@ -1,0 +1,7 @@
+﻿  http_mman_default_buffering.c
+  http_mman_heap_based.c
+  default_buffering.c
+  heap_based.c
+  Generating Code...
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(67): warning C4716: '__synapse_http_mman_buffering_default_pop_back': must return a value
+  synapse-http-mman.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-http\project_files\vs2022\synapse-http\x64\Debug\synapse-http-mman.lib
