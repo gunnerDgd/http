@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synapse-http-transaction", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synapse-http-mman", "synapse-http-mman\synapse-http-mman.vcxproj", "{15949020-840C-4D69-8DED-41DF93F4BA67}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synapse-http-include", "synapse-http-include\synapse-http-include.vcxproj", "{87B0610B-6825-4C55-AE20-12C31CF75B9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{15949020-840C-4D69-8DED-41DF93F4BA67}.Release|x64.Build.0 = Release|x64
 		{15949020-840C-4D69-8DED-41DF93F4BA67}.Release|x86.ActiveCfg = Release|Win32
 		{15949020-840C-4D69-8DED-41DF93F4BA67}.Release|x86.Build.0 = Release|Win32
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Debug|x64.ActiveCfg = Debug|x64
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Debug|x64.Build.0 = Debug|x64
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Debug|x86.ActiveCfg = Debug|Win32
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Debug|x86.Build.0 = Debug|Win32
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Release|x64.ActiveCfg = Release|x64
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Release|x64.Build.0 = Release|x64
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Release|x86.ActiveCfg = Release|Win32
+		{87B0610B-6825-4C55-AE20-12C31CF75B9C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

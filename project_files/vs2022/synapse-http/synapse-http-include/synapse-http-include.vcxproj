@@ -19,14 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\include\http\transaction\details\http_transaction_type.h" />
-    <ClInclude Include="..\..\..\..\include\http\transaction\details\request\http_request.h" />
+    <ClInclude Include="..\..\..\..\include\http\defines\debug\debug.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{30a6ca00-f00c-4f0b-a512-655f46b0b46a}</ProjectGuid>
-    <RootNamespace>synapsehttptransaction</RootNamespace>
+    <ProjectGuid>{87b0610b-6825-4c55-ae20-12c31cf75b9c}</ProjectGuid>
+    <RootNamespace>synapsehttpinclude</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -74,10 +73,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\Programming\C++\Projects\Experimental\synapse-http\include;$(IncludePath)</IncludePath>
-    <OutDir>E:\Programming\C++\Projects\Experimental\synapse-http\libs\x64\debug\</OutDir>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

@@ -19,7 +19,8 @@ typedef struct __synapse_http_mman_buffering_default_entity
 
 	__synapse_http_mman_buffering_default_entity_node
 		*entry   ,
-		*backmost;
+		*backmost,
+		*current ;
 	synapse_http_mman_interface
 		mman_interface;
 } __synapse_http_mman_buffering_default_entity;

@@ -27,12 +27,14 @@
     <ClInclude Include="..\..\..\..\include\http\connection\details\acceptor\http_acceptor_type.h" />
     <ClInclude Include="..\..\..\..\include\http\connection\details\http_connection.h" />
     <ClInclude Include="..\..\..\..\include\http\connection\details\http_connection_type.h" />
+    <ClInclude Include="..\..\..\..\include\http\connection\details\io_base\http_connection_io_base.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\c\connection\acceptor_tcp.c" />
     <ClCompile Include="..\..\..\..\source\c\connection\connection_tcp.c" />
     <ClCompile Include="..\..\..\..\source\c\connection\details\acceptor\http_acceptor_tcp.c" />
     <ClCompile Include="..\..\..\..\source\c\connection\details\http_connection.c" />
+    <ClCompile Include="..\..\..\..\source\c\connection\details\io_base\http_connection_io_base.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

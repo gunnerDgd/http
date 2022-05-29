@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>E:\Programming\C++\Projects\Experimental\synapse-http\include;$(IncludePath)</IncludePath>
+    <OutDir>E:\Programming\C++\Projects\Experimental\synapse-http\libs\x64\debug\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

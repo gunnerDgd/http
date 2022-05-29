@@ -1,7 +1,13 @@
 ﻿  http_mman_default_buffering.c
-  http_mman_heap_based.c
-  default_buffering.c
-  heap_based.c
-  Generating Code...
-E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(67): warning C4716: '__synapse_http_mman_buffering_default_pop_back': must return a value
-  synapse-http-mman.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-http\project_files\vs2022\synapse-http\x64\Debug\synapse-http-mman.lib
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(153,3): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 3 has type 'size_t'
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(153,3): message : consider using '%zx' in the format string
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(154,3): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 3 has type 'size_t'
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(154,3): message : consider using '%zx' in the format string
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(155,3): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 3 has type 'size_t'
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(155,3): message : consider using '%zx' in the format string
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(156,3): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 3 has type 'size_t'
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(156,3): message : consider using '%zx' in the format string
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(157,3): warning C4477: 'printf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 3 has type 'size_t'
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(157,3): message : consider using '%zx' in the format string
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\details\mman\buffering\http_mman_default_buffering.c(87): warning C4716: '__synapse_http_mman_buffering_default_pop_back': must return a value
+  synapse-http-mman.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-http\libs\x64\debug\synapse-http-mman.lib

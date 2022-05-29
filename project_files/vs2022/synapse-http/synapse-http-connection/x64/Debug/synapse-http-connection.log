@@ -1,4 +1,4 @@
-﻿  http_acceptor_tcp.c
-E:\Programming\C++\Projects\Experimental\synapse-http\source\c\connection\details\acceptor\http_acceptor_tcp.c(32,49): warning C4133: 'function': incompatible types - from 'SOCKADDR_IN *' to 'const sockaddr *'
-E:\Programming\C++\Projects\Experimental\synapse-http\source\c\connection\details\acceptor\http_acceptor_tcp.c(49,81): warning C4133: 'function': incompatible types - from 'SOCKADDR_IN *' to 'sockaddr *'
+﻿  http_connection_io_base.c
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\connection\details\io_base\http_connection_io_base.c(6,42): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+E:\Programming\C++\Projects\Experimental\synapse-http\source\c\connection\details\io_base\http_connection_io_base.c(12,42): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
   synapse-http-connection.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-http\libs\x64\debug\synapse-http-connection.lib
